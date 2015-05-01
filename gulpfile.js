@@ -30,7 +30,7 @@ var out             = process.env.DEST_DIR || '.build',
     tensideApi      = process.env.TENSIDE_API || false,
     tensideVersion  = process.env.TENSIDE_VERSION || false,
     composerVersion = process.env.COMPOSER_VERSION || false,
-    mockAPI         = false;
+    mockAPI         = true;
 
 function getTensideApi() {
     if (!tensideApi) {
