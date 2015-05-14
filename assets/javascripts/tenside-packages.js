@@ -131,11 +131,15 @@
         var translations = {
             PACKAGES: {
                 HEADLINE: 'Packages',
+                UPDATE: 'Update',
                 UPGRADE: 'Upgrade',
                 UPGRADE_SELECTED: 'Upgrade package {{package}}.',
-                LOCK_SELECTED: 'Lock package {{package}} version.',
-                UNLOCK_SELECTED: 'Unlock package {{package}} version.',
+                LOCK_SELECTED: 'Lock package {{package}} at version {{version}}.',
+                UNLOCK_SELECTED: 'Unlock package {{package}} at version {{version}}.',
                 REMOVE_SELECTED: 'Remove package {{package}}.'
+            },
+            PACKAGE: {
+                DETAIL: ' Package {{package}} details.'
             }
         };
 

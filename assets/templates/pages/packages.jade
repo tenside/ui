@@ -22,10 +22,10 @@ h1(translate="PACKAGES.HEADLINE")
               button.btn.btn-primary.btn-md(type="button", title="{{ 'PACKAGES.UPGRADE_SELECTED' | translate:{package:package.name} }}", ng-if="canUpgrade(package)", ng-click="upgrade(package)")
                 span.fa.fa-fw.fa-arrow-circle-up
                 span.sr-only(translate="PACKAGES.UPGRADE_SELECTED" translate-values="{package: package.name}")
-              button.btn.btn-info.btn-md(type="button", title="{{ 'PACKAGES.LOCK_SELECTED' | translate:{package:package.name} }}", ng-if="!package.locked", ng-click="lock(package)", ng-show="expertsMode")
+              button.btn.btn-info.btn-md(type="button", title="{{ 'PACKAGES.LOCK_SELECTED' | translate:{package:package.name,package:package.version} }}", ng-if="!package.locked", ng-click="lock(package)")
                 span.fa.fa-fw.fa-unlock
                 span.sr-only(translate="PACKAGES.LOCK_SELECTED" translate-values="{package: package.name}")
-              button.btn.btn-warning.btn-md(type="button", title="{{ 'PACKAGES.UNLOCK_SELECTED' | translate:{package:package.name} }}", ng-if="package.locked", ng-click="unlock(package)", ng-show="expertsMode")
+              button.btn.btn-warning.btn-md(type="button", title="{{ 'PACKAGES.UNLOCK_SELECTED' | translate:{package:package.name,package:package.version} }}", ng-if="package.locked", ng-click="unlock(package)")
                 span.fa.fa-fw.fa-lock
                 span.sr-only(translate="PACKAGES.UNLOCK_SELECTED" translate-values="{package: package.name}")
               button.btn.btn-danger.btn-md(type="button", title="{{ 'PACKAGES.REMOVE_SELECTED' | translate:{package:package.name} }}", ng-if="canDelete(package)", ng-click="remove(package)")
